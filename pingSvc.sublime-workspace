@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"da",
+				"dataPost"
+			],
+			[
+				"add",
+				"addr"
+			],
+			[
+				"re",
+				"resultOb"
+			],
+			[
+				"hos",
+				"hosts"
+			],
+			[
+				"pin",
+				"pingResultArray"
+			],
+			[
+				"dat",
+				"data2Post"
+			],
+			[
+				"pos",
+				"postData"
+			],
+			[
 				"conte",
 				"contest"
 			],
@@ -68,10 +96,6 @@
 				"for	for (…) {…}"
 			],
 			[
-				"re",
-				"report"
-			],
-			[
 				"rep",
 				"reports"
 			],
@@ -90,10 +114,6 @@
 			[
 				"in",
 				"include"
-			],
-			[
-				"pos",
-				"posts"
 			],
 			[
 				"us",
@@ -171,7 +191,7 @@
 			"file": "serverSide/app.js",
 			"settings":
 			{
-				"buffer_size": 1193,
+				"buffer_size": 1290,
 				"line_ending": "Unix"
 			}
 		},
@@ -179,7 +199,7 @@
 			"file": "serverSide/routes/index.js",
 			"settings":
 			{
-				"buffer_size": 2037,
+				"buffer_size": 2260,
 				"line_ending": "Unix"
 			}
 		},
@@ -187,8 +207,40 @@
 			"file": "serverSide/views/index.ejs",
 			"settings":
 			{
-				"buffer_size": 2586,
+				"buffer_size": 3189,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "clientSide/package.json",
+			"settings":
+			{
+				"buffer_size": 200,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "clientSide/routes/index.js",
+			"settings":
+			{
+				"buffer_size": 2433,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "clientSide/node_modules/ping/lib/ping-sys.js",
+			"settings":
+			{
+				"buffer_size": 1899,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "clientSide/app.js",
+			"settings":
+			{
+				"buffer_size": 846,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -203,7 +255,7 @@
 	},
 	"console":
 	{
-		"height": 0.0
+		"height": 125.0
 	},
 	"distraction_free":
 	{
@@ -247,6 +299,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"rawBody",
 			"ajaxRefreshContests",
 			"ajaxContests",
 			"ajaxRefreshContests",
@@ -279,15 +332,15 @@
 					"file": "serverSide/app.js",
 					"settings":
 					{
-						"buffer_size": 1193,
+						"buffer_size": 1290,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								490,
+								490
 							]
 						],
 						"settings":
@@ -297,7 +350,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 90.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -307,15 +360,15 @@
 					"file": "serverSide/routes/index.js",
 					"settings":
 					{
-						"buffer_size": 2037,
+						"buffer_size": 2260,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1761,
+								1761
 							]
 						],
 						"settings":
@@ -324,7 +377,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 675.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -334,20 +387,128 @@
 					"file": "serverSide/views/index.ejs",
 					"settings":
 					{
-						"buffer_size": 2586,
+						"buffer_size": 3189,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1425,
+								1425
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 675.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "clientSide/package.json",
+					"settings":
+					{
+						"buffer_size": 200,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								155,
+								155
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "clientSide/routes/index.js",
+					"settings":
+					{
+						"buffer_size": 2433,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								283,
+								283
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "clientSide/node_modules/ping/lib/ping-sys.js",
+					"settings":
+					{
+						"buffer_size": 1899,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								788,
+								788
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 315.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "clientSide/app.js",
+					"settings":
+					{
+						"buffer_size": 846,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								217,
+								217
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -389,6 +550,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.GoSublime-main-output":
+	{
+		"height": 100.0
+	},
 	"replace":
 	{
 		"height": 0.0

@@ -19,14 +19,17 @@ app.use(express.favicon());
 app.use(express.logger('dev'));
 app.use(function(req, res, next) {
     var data = '';
+    // req.rawBody = '';
     req.setEncoding('utf8');
     req.on('data', function(chunk) { 
         data += chunk;
+        console.log('onData =>'+data);
+        // req.rawBody += chunk;
     });
     req.on('end', function() {
         req.rawBody = data;
-    });
         next();
+    });
 });
 app.use(express.bodyParser());
 app.use(express.methodOverride());

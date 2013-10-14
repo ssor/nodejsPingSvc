@@ -55,12 +55,15 @@ exports.ipEndStatusList = function(req, res){
 exports.postStatusList = function(req, res){
 	var time = new Date();  
 	var rawBody = req.rawBody;
+	console.log('rawBody =>'+rawBody);
+	// console.log('body => '+req.body);
 	var list = JSON.parse(rawBody);
 	for (var i = 0; i < list.length; i++) {
 		var newStatus = list[i];
-		newStatus.timeStamp = time.format('yyyy-MM-dd hh:mm:ss"');
+		newStatus.timeStamp = time.format('yyyy-MM-dd hh:mm:ss');
 		updateStatus(newStatus);
 	};
+	res.end();
 };
 
 function updateStatus(status){
@@ -69,6 +72,8 @@ function updateStatus(status){
 		statusList[statusList.length] = status;
 	}else{
 		temp.status = status.status;
+		temp.timeStamp = status.timeStamp;
+		console.log(temp.timeStamp);
 	}
 }
 function getStatusByIP(ip){
@@ -80,3 +85,6 @@ function getStatusByIP(ip){
 	}
 	return null;
 }
+
+// ContentType: application/text;charset=utf-8
+// Content-Length: 56
