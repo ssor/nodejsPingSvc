@@ -4,12 +4,12 @@
  */
 var serverHost = 'localhost';
 var serverPath = '/postStatusList';
-var serverPort = 3000;
+var serverPort = 3100;
 var ping = require('ping');
 var http = require('http');
 
 
-var hosts = ['127.0.0.1', 'google.com', 'yahoo.com'];
+var hosts = [{name:'local', host:'127.0.0.1'}, {name:'谷歌', host:'google.com'}, , {name:'雅虎',host:'yahoo.com'}];
 // http.post = require('http-post');
 setInterval(actPing, 3000);
 exports.index = function(req, res){
@@ -44,11 +44,11 @@ function actPing(){
 
 	hosts.forEach(function(host){
 	    ping.sys.probe(host, function(result){
-	        var msg = result.isAlive ? 'host ' + host + ' is alive' : 'host ' + host + ' is dead';
+	        var msg = result.isAlive ? 'host ' + host.name + ' is alive' : 'host ' + host.name + ' is dead';
 	        console.log(msg);
 	        var status = result.isAlive ? 'ok' : 'failed';
 			var pingResultArray = new Array();
-	        pingResultArray[pingResultArray.length] = {ipEnd: result.address, status:status};
+	        pingResultArray[pingResultArray.length] = {ipEnd: result.address.name, status:status};
 			if(pingResultArray.length > 0){
 				postData(JSON.stringify(pingResultArray));
 			}	 
