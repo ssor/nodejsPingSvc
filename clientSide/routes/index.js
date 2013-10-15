@@ -9,7 +9,7 @@ var ping = require('ping');
 var http = require('http');
 
 
-var hosts = [{name:'local', host:'127.0.0.1'}, {name:'谷歌', host:'google.com'}, , {name:'雅虎',host:'yahoo.com'}];
+var hosts = [{name:'local', host:'127.0.0.1'},{name:'科技楼四楼天线', host:'172.18.129.12'}, {name:'科技楼四楼摄像头', host:'172.18.129.21'}, {name:'环境科学楼天线', host:'172.18.129.14'}, {name:'环境科学楼摄像头', host:'172.18.129.20'}, {name:'宿舍楼天线', host:'172.18.129.13'}, {name:'宿舍楼摄像头', host:'172.18.129.22'}, {name:'谷歌', host:'google.com'}];
 // http.post = require('http-post');
 setInterval(actPing, 3000);
 exports.index = function(req, res){
